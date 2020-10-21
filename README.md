@@ -4,7 +4,7 @@ My Engineering 4 Notebook - Get well soon VVD
 
 
 
-## Hello Raspberry Pi
+### Hello Raspberry Pi
 
 This is is Hello Raspberry Pi module. In this module, we connect the Raspberry Pi to our computer, and open the editor, in this case, Beagle Term. This module took 7 hours, although it was very easy. My issue was that when I open Beagle Term and hit enter, I do not get any response. The solution was to switch my TX and RX cables, as the label on them was incorrect.
 
