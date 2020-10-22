@@ -11,7 +11,7 @@ This is is Hello Raspberry Pi module. In this module, we connect the Raspberry P
 
 Images:
 
-<img src="Images/Screenshot%202020-10-14%20at%201.08.21%20PM%20(2).png" width="256">
+<img src="Images/Screenshot%202020-10-14%20at%201.08.21%20PM%20(2).png" width="256*1.5">
                                                                                
 <img src="Images/Screenshot%202020-10-14%20at%2012.56.37%20PM%20(2).png" width="256">
 
