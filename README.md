@@ -22,5 +22,5 @@ Images:
 
 This is the Get your Pi Online module. In this module, we had to connect our Pi to the internet, and then add the file from the Hello Raspberry Pi module to our Git Hub. We created folder on the Pi for our Engineering 4 Notebook Repo, and then we committed and pushed the file and folder to our Git Hub. This module took a bit of thinking and genuinely was difficult at times; the biggest take away for me was that you should not just type in what Dr. Shields has in the video, you should understand what each line, and really each word, does, as Beagle Term and Raspberry Pi can be unforgiving for learners like me.
 
-<img src="Images/Screenshot%202020-10-21%20at%201.15.39%20PM.png" width="256">
+<img src="Images/Screenshot%202020-10-21%20at%201.15.39%20PM.png" width="256*2">
                                                                             
