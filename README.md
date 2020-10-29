@@ -24,3 +24,10 @@ This is the Get your Pi Online module. In this module, we had to connect our Pi 
 
 <img src="Images/Screenshot%202020-10-21%20at%201.15.39%20PM.png" width="256*2">
                                                                             
+### Hello Python (Dice Roller)
+
+This is from the Hello Python module. In this module, we had to create a python file that would roll a die when enter was pressed, and when x was pressed, the program would quit.
+
+This module was definitely the most challenging to date. It really made me rely on the skills I developed in the prior assignments. I think, as mentioned in the previous module, that going back throught the assignment video and watching/noting what each line does really helped. The hard part for me wasn't writing the actual code, but rather manuvering through the Raspberry Pi interface; however I think I have the basics down now. 
+
+<img src="Images/Screenshot%202020-10-29%20at%202.37.34%20PM.png" width="256*2">
