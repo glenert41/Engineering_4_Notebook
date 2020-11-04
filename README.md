@@ -65,8 +65,21 @@ This module took a bit of thinking and genuinely was difficult at times; the big
                                      
 ### Hello Python (Dice Roller)
 
+#### Description
 This is from the Hello Python module. In this module, we had to create a python file that would roll a die when enter was pressed, and when x was pressed, the program would quit.
 
-This module was definitely the most challenging to date. It really made me rely on the skills I developed in the prior assignments. I think, as mentioned in the previous module, that going back throught the assignment video and watching/noting what each line does really helped. The hard part for me wasn't writing the actual code, but rather manuvering through the Raspberry Pi interface; however I think I have the basics down now. 
+#### Code Link
+
+[Dicer Roller Code Link](https://github.com/glenert41/Engineering_4_Notebook/blob/main/Python/dice_roller.py)
+
+#### Images
 
 <img src="Images/Screenshot%202020-10-29%20at%202.37.34%20PM.png" width="256*2">
+
+#### Reflection
+
+This module was definitely the most challenging to date. It really made me rely on the skills I developed in the prior assignments. I think, as mentioned in the previous module, that going back throught the assignment video and watching/noting what each line does really helped. The hard part for me wasn't writing the actual code, but rather manuvering through the Raspberry Pi interface; however I think I have the basics down now. On issue I had was how to detect if enter was pressed with an input, the way to solve this is by leaving the quotes blank in between. For example, instead of ("ENTER") just do (" ")
+
+
+
+
