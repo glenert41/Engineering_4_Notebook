@@ -83,3 +83,30 @@ This module was definitely the most challenging to date. It really made me rely 
 
 
 
+
+### Program 01 - Calculator
+
+#### Description
+
+In this module, we had to make a calculator in python. Essentially, we had to have the user input 2 numbers, then run those numbers through one function, and recieve the results of the 5 different operators (Addition, Subtraction, Multiplication, Division, Modulo)
+
+#### Code Link
+
+[Calculator Link](https://github.com/glenert41/Engineering_4_Notebook/blob/main/Python/calculator.py)
+
+#### Images
+
+<img src="Images/Screenshot%202020-11-09%20at%2012.56.04%20PM.png" width="256*2">
+
+#### Reflection
+
+This module was very fun for me. At first, I went through and didn't use a function (Which cost me a class period of work because I didn't fully read the directions. Life lesson 1 -- read the directions.) Anyways, my biggest takeaway from this module was really reafirriming how to use functions in python with parameters. Essentially, in the function definition, you have to declare that this function will need parameters (values) in order to run, and then it will use those values you give the function when you call it later on to give you the result.
+
+
+
+
+
+
+
+
+
