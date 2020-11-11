@@ -1,0 +1,35 @@
+# Quadratic Solver
+# Graham Lenert
+# Give A, B, C, values for standard form of a quadratic, and program will return roots
+
+import math
+
+print("Quadratic Solver")
+
+a, b, c = input("Enter your A, B, & C value (standard form): ").split()
+inputArray = [int(a),int(b), int(c)]
+#print(inputArray)
+
+
+def discrimFunc(vals):
+	
+	roots = 0
+	aa = vals[0]
+	bb = vals[1]
+	cc = vals[2]
+	
+	if((bb*bb) - 4*aa*cc) < 0:
+		print("No Real Roots")
+	else:
+		
+		
+
+discrimFunc(inputArray)
+	
+
+	
+
+
+
+
+
