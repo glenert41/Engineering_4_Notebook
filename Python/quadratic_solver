@@ -10,22 +10,31 @@ a, b, c = input("Enter your A, B, & C value (standard form): ").split()
 inputArray = [int(a),int(b), int(c)]
 #print(inputArray)
 
+rootArray = []
 
 def discrimFunc(vals):
+
+		
 	
-	roots = 0
 	aa = vals[0]
 	bb = vals[1]
 	cc = vals[2]
 	
-	if((bb*bb) - 4*aa*cc) < 0:
-		print("No Real Roots")
+	if bb*bb - 4*aa*cc < 0:
+		#print("No Real Roots")
+		rootArray.append("No Real Roots")
 	else:
+		
+		rootA =(-bb + (bb*bb-4*aa*cc)**(1/2) ) / (2*aa)
+		rootB =(-bb - (bb*bb-4*aa*cc)**(1/2) ) / (2*aa)
+		
+		rootArray.append(rootA)
+		rootArray.append(rootB)
 		
 		
 
 discrimFunc(inputArray)
-	
+print(rootArray)
 
 	
 
