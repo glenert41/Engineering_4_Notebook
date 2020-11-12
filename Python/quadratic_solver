@@ -5,16 +5,17 @@
 import math
 
 print("Quadratic Solver")
+print("Enter the coefficients for ax^2 + bx + c = 0")
 
-a, b, c = input("Enter your A, B, & C value (standard form): ").split()
+a = input("A Value: ")
+b = input("B Value: ")
+c = input("C Value: ")
+
 inputArray = [int(a),int(b), int(c)]
-#print(inputArray)
 
 rootArray = []
 
 def discrimFunc(vals):
-
-		
 	
 	aa = vals[0]
 	bb = vals[1]
@@ -27,14 +28,18 @@ def discrimFunc(vals):
 		
 		rootA =(-bb + (bb*bb-4*aa*cc)**(1/2) ) / (2*aa)
 		rootB =(-bb - (bb*bb-4*aa*cc)**(1/2) ) / (2*aa)
-		
-		rootArray.append(rootA)
-		rootArray.append(rootB)
-		
-		
+	
+		RrootA = round(rootA,2)
+		RrootB = round(rootB,2)	
+				
+		rootArray.append(RrootA)
+		rootArray.append(RrootB)
 
-discrimFunc(inputArray)
-print(rootArray)
+		return rootArray
+				
+print(discrimFunc(inputArray))
+print(str(rootArray[0]) + " " + str(rootArray[1]))
+
 
 	
 
