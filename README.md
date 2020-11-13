@@ -121,7 +121,7 @@ In this module, we had to make a quadratic solver, meaning the user would give t
 
 #### Reflection
 
-This module was pretty straight forward. It was cool to see the power that arrays had, and I definitely plan to use them in the future. The hardest part for me though was getting used to arrays. You can print the values of the array, and even print the array, but there will still be brackets around the values. In this case, have to place a string of the value of each position in the array. Something that I thought was cool though is that you are able to mix numbers and letters in an array, which lets you store different types of values in one array. Also, if you want to add a value to an array, you have to add append it (ARRAYNAME.append("value")).
+This module was pretty straight forward. It was cool to see the power that arrays had, and I definitely plan to use them in the future. The hardest part for me though was getting used to arrays. You can print the values of the array, and even print the array, but there will still be brackets around the values. In this case, you have to place a string of the value of each position in the array. Something that I thought was cool though is that you are able to mix numbers and letters in an array, which lets you store different types of values in one array. Also, if you want to add a value to an array, you have to add append it (ARRAYNAME.append("value")).
 
 
 
