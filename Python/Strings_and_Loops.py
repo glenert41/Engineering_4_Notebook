@@ -2,10 +2,13 @@
 #In this program, the user inputs a sentence, and then an it gets printed back letter for letter, with a minus as a space
 #Graham Lenert
 
-inputSentence = input("Enter your phrase: ")
+string = str(input("Enter your phrase: ")) 
+string = string.replace(" ", "-") 
 
+string_list = list(string) 
+#string_list.append("-") 
 
-splitArray = inputSentence.split()
+for x in string_list:
+    print(x)
 
-for i in range (len(splitArray)):
-  #this is new
+  
