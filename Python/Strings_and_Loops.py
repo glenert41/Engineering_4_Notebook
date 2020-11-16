@@ -8,7 +8,4 @@ inputSentence = input("Enter your phrase: ")
 splitArray = inputSentence.split()
 
 for i in range (len(splitArray)):
-	print("g")
 
-	for i in range (len(splitArray[0])):
-		print("-")
