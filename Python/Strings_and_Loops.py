@@ -8,4 +8,4 @@ inputSentence = input("Enter your phrase: ")
 splitArray = inputSentence.split()
 
 for i in range (len(splitArray)):
-
+  #this is new
