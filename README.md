@@ -125,7 +125,38 @@ This module was pretty straight forward. It was cool to see the power that array
 
 
 
+### Program 03 - Strings and Loops (String Splitter)
 
+#### Description
+
+In this module, we had to make a program that would take an input sentence, and then print the input out letter by letter, and with a - sign instead of a space.
+
+#### Code Link
+
+[String Splitter](https://github.com/glenert41/Engineering_4_Notebook/blob/main/Python/Strings_and_Loops.py)
+
+#### Images
+
+<img src="Images/Screenshot%202020-11-16%20at%209.37.50%20PM.png" width="256*2">
+
+#### Reflection
+
+There were plenty of different ways to do this module. I began with roughly 10 lines of code. Then broke it down in to smaller and more concise lines, until I was able to have around 5 remain. I think my favorite way of printing items in a list is by doing this doing  print(*LIST_NAME, sep='\n').* This was seemingly the most efficient way to print each element on its own line. You could also do something with a for loop, like as follows .... for X in LISTNAME: print(x) ... This works well when you have other operations to do in the for loop. I expect to be using the later in the upcoming module. Also, in order to replace an item in the list, just use the replace() function. For example ... stringName = stringName.replace("w", "t")  ... This replaces all w's in the list with t's.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
