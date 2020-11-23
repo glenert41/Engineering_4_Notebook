@@ -28,7 +28,7 @@ wordBoardArray = []
 
 #StartUP
 #takes the user input / wipes the Screen / puts the input in to an array
-answerInput = str(input("Please enter the word to be guessed: "))
+answerInput = str(input("Please enter the word to be guessed: ").lower())
 print("\n" * 50)
 for x in range (len(answerInput)):
   answerInputArray.append(answerInput[x])
@@ -43,23 +43,48 @@ wordBoardList = list(wordBoardArray)
 
 while endCondition == 0:     #While the game has not been won or lost
 
-  guessLetter = str(input("Guess a letter: "))
+  guessLetter = str(input("Guess a letter: ").lower())
 
-  for x in range(len(answerInputArray)):
+  
+  guessedList = []
+  guessAttempts = 0
 
-      # if the letter is the word
-      if str(answerInputArray[x]) == str(guessLetter):
-          wordBoardArray[x] = guessLetter
-          wordBoardList = list(wordBoardArray)
+  if guessLetter in guessedList:
+      print("Already guessed")
+
+  if guessLetter not in guessedList:
+
+   for x in range(len(answerInputArray)):
+
+        # if the letter is the word
+        if str(answerInputArray[x]) == str(guessLetter):
+
+            
+
+            wordBoardArray[x] = guessLetter
+            wordBoardList = list(wordBoardArray)
+
+            
+            guessedList.insert(guessAttempts, guessedList)
+            guessAttempts = guessAttempts + 1
 
 
+
+  # If guessed letter is not part of the word
   if guessLetter not in list(answerInputArray):
-      print("Time to start hangman")
+
+      guessedList.insert(guessAttempts,guessedList)
+      guessAttempts = guessAttempts + 1
+      
+      print("Added to Hangman")
+
 
 
 
 
   print(*wordBoardList, sep=' ')
+  print(guessAttempts)
+  print(guessedList)
   
 
 
@@ -68,10 +93,7 @@ while endCondition == 0:     #While the game has not been won or lost
 
 
   if wordBoardArray == answerInputArray:
-      endCondition = 1
-
-  if endCondition == 1 :
-    break
+      break
   
 
   time.sleep(1)
