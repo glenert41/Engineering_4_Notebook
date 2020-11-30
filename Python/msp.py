@@ -30,8 +30,9 @@ WC = 0
 
 
 def draw(n):
+    print("\n" * 2)
     f = open("banner.txt", "r")
-    for x in range(0, (5-n) * 4 + 1):
+    for x in range(0, (5-n) * 8 + 1):
         print(f.readline(), end="")
 
 
@@ -106,9 +107,9 @@ while endCondition == 0:     #While the game has not been won or lost
   
 
 if WC == 1:
-  print("Win")
+  print("You Win")
 elif WC == -1:
-  print("Lose")
+  print(" You Lose")
 
     
 
