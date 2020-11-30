@@ -36,7 +36,9 @@ for x in range (len(answerInput)):
 
 wordBoardList = list(wordBoardArray)
 
-
+guessedList = []
+guessAttempts = 5
+WC = 0
 
 
 
@@ -46,15 +48,24 @@ while endCondition == 0:     #While the game has not been won or lost
   guessLetter = str(input("Guess a letter: ").lower())
 
   
-  guessedList = []
-  guessAttempts = 0
 
+
+
+
+  
+  # If guess letter has already been guessed
   if guessLetter in guessedList:
+      print("\n")
       print("Already guessed")
+      print("\n")
+      continue
 
+  # if guess letter has not already been guessed; and is right
   if guessLetter not in guessedList:
+    guessedList.append(guessLetter)
+    
 
-   for x in range(len(answerInputArray)):
+    for x in range(len(answerInputArray)):
 
         # if the letter is the word
         if str(answerInputArray[x]) == str(guessLetter):
@@ -65,42 +76,41 @@ while endCondition == 0:     #While the game has not been won or lost
             wordBoardList = list(wordBoardArray)
 
             
-            guessedList.insert(guessAttempts, guessedList)
-            guessAttempts = guessAttempts + 1
 
-
-
-  # If guessed letter is not part of the word
+  # If guessed letter is wrong
   if guessLetter not in list(answerInputArray):
+      print("added to hangman")
 
-      guessedList.insert(guessAttempts,guessedList)
-      guessAttempts = guessAttempts + 1
       
-      print("Added to Hangman")
-
-
-
-
-
+      guessAttempts = guessAttempts - 1
+      
+      
+  print("\n")
   print(*wordBoardList, sep=' ')
-  print(guessAttempts)
-  print(guessedList)
-  
-
-
-
+  print("Guess Attempts Remaining: " + str(guessAttempts))
+  print("Letters Guessed: " + str(guessedList))
+  print("\n" * 5)
 
 
 
   if wordBoardArray == answerInputArray:
+      WC = 1
       break
+
+  if guessAttempts == 0:
+      WC = -1
+      break
+      
   
 
   time.sleep(1)
 
   
-        
-print("You win")
+
+if WC == 1:
+  print("Win")
+elif WC == -1:
+  print("Lose")
 
     
 
