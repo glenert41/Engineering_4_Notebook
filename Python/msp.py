@@ -1,22 +1,9 @@
 #MSP and/or Hangman game
 
-# Steps
-# 1: Asks player for the word 
-# 2: Clear the Screen
-# 3: Loop
-    #: print the wordBoard
-    # if wordBoard is still open & Hangman is not complete:
-      # Ask Player for Letter
-          # if Letter is in word
-            #update wordBoard
-              
-          # if Letter is NOT in word  
-              # Draw next hangman piece  
-    # if wordBoard is closed:
-        #Game Win!
-
 
 import time
+import os
+
 
 
 
@@ -39,6 +26,14 @@ wordBoardList = list(wordBoardArray)
 guessedList = []
 guessAttempts = 5
 WC = 0
+
+
+
+def draw(n):
+    f = open("banner.txt", "r")
+    for x in range(0, (5-n) * 4 + 1):
+        print(f.readline(), end="")
+
 
 
 
@@ -80,9 +75,12 @@ while endCondition == 0:     #While the game has not been won or lost
   # If guessed letter is wrong
   if guessLetter not in list(answerInputArray):
       print("added to hangman")
+      
 
       
       guessAttempts = guessAttempts - 1
+
+      draw(int(guessAttempts))
       
       
   print("\n")
