@@ -146,6 +146,23 @@ There were plenty of different ways to do this module. I began with roughly 10 l
  
  
  
+ ### Program 04 - Man Shaped Piñata
+ 
+ 
+ #### Description
+ 
+
+ 
+ #### Code Link
+ 
+ [Man Shaped Piñata](https://github.com/glenert41/Engineering_4_Notebook/blob/main/Python/msp.py)
+ 
+ #### Images
+ 
+ 
+ #### Reflection
+ 
+ 
  
  
  
