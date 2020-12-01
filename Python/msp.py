@@ -9,29 +9,37 @@ import os
 
 endCondition = 0  
 
+#creates the arrays and lists (no values in them)
 answerInputArray = []
 wordBoardArray = []
+wordBoardList = list(wordBoardArray)
 
 
 #StartUP
-#takes the user input / wipes the Screen / puts the input in to an array
-answerInput = str(input("Please enter the word to be guessed: ").lower())
-print("\n" * 50)
+#takes the user input in lower case / wipes the Screen / puts the input in to an array
+answerInput = str(input("Please enter the word to be guessed: ").lower()) 
+
+print("\n" * 50) #clears the screen
+
 for x in range (len(answerInput)):
   answerInputArray.append(answerInput[x])
   wordBoardArray.append("_ ")
+  #creates the array where you answer with the correct amount of underscores
 
-wordBoardList = list(wordBoardArray)
+
+
 
 guessedList = []
-guessAttempts = 5
-WC = 0
+guessAttempts = 5 #5 guess attempts to start
+WC = 0 #win condition variable
 
 
+#function that draws Franklin
+def draw(n):  
+    print("\n" * 2) #returns a few lines for clarity
+    f = open("banner.txt", "r") #opens the Franklin file
 
-def draw(n):
-    print("\n" * 2)
-    f = open("banner.txt", "r")
+    #prints a cwrtain amount of lines based on guesses Remaining
     for x in range(0, (5-n) * 8 + 1):
         print(f.readline(), end="")
 
