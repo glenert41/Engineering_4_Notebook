@@ -1,4 +1,6 @@
 #MSP and/or Hangman game
+#Graham Lenert
+# This program plays the hangman game
 
 
 import time
@@ -11,7 +13,7 @@ endCondition = 0
 
 #creates the arrays and lists (no values in them)
 answerInputArray = []
-wordBoardArray = []
+wordBoardArray = [] # answer list that you can see
 wordBoardList = list(wordBoardArray)
 
 
@@ -49,6 +51,7 @@ def draw(n):
 
 while endCondition == 0:     #While the game has not been won or lost
 
+  #asks for your guess and makes it lower case
   guessLetter = str(input("Guess a letter: ").lower())
 
   
@@ -62,20 +65,20 @@ while endCondition == 0:     #While the game has not been won or lost
       print("\n")
       print("Already guessed")
       print("\n")
-      continue
+      continue #go back to the while loop start
 
   # if guess letter has not already been guessed; and is right
   if guessLetter not in guessedList:
-    guessedList.append(guessLetter)
+    guessedList.append(guessLetter)  #add the letter guessed to list of already guessed letters
     
+    # go through each letter in the answer and check if it matches thre guess
+    for x in range(len(answerInputArray)): 
 
-    for x in range(len(answerInputArray)):
-
-        # if the letter is the word
+        # if the letter is the word, add guess to answer
         if str(answerInputArray[x]) == str(guessLetter):
 
             
-
+            #adds correct guess to word board 
             wordBoardArray[x] = guessLetter
             wordBoardList = list(wordBoardArray)
 
@@ -83,30 +86,31 @@ while endCondition == 0:     #While the game has not been won or lost
 
   # If guessed letter is wrong
   if guessLetter not in list(answerInputArray):
-      print("added to hangman")
+      #print("added to hangman")
       
-
-      
+      #take away a guess
       guessAttempts = guessAttempts - 1
 
+      #draws the hangman
       draw(int(guessAttempts))
       
       
-  print("\n")
-  print(*wordBoardList, sep=' ')
-  print("Guess Attempts Remaining: " + str(guessAttempts))
-  print("Letters Guessed: " + str(guessedList))
-  print("\n" * 5)
+  print("\n") #returns a little
+  print(*wordBoardList, sep=' ') #print the list of letters
+  print("Guess Attempts Remaining: " + str(guessAttempts)) #primt how many guesses you have left
+  print("Letters Guessed: " + str(guessedList)) #print what lettersd you have guessed
+  print("\n" * 5) #returns a lot
 
 
-
+  #if the letters you've guessed match the answer
   if wordBoardArray == answerInputArray:
       WC = 1
-      break
+      break #quit the while loop
 
+  # if you have 0 remaining guesses
   if guessAttempts == 0:
       WC = -1
-      break
+      break #quit the while loop
       
   
 
@@ -114,7 +118,7 @@ while endCondition == 0:     #While the game has not been won or lost
 
   
 
-if WC == 1:
+if WC == 1: #prints win or lose
   print("You Win")
 elif WC == -1:
   print(" You Lose")
