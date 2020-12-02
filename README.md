@@ -159,6 +159,9 @@ In this assignment, we had to recreate the classic game Hangman; or as we're goi
  
  #### Images
  
+ <img src="Images/Screenshot%202020-12-02%20at%2012.22.50%20PM.png" width="256*2">
+ 
+ <img src="Images/Screenshot%202020-12-02%20at%2012.23.34%20PM.png" width="256*2">
  
  #### Reflection
  
