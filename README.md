@@ -167,7 +167,29 @@ In this assignment, we had to recreate the classic game Hangman; or as we're goi
  
  This assignment was the first assignment this year to really make me think about the process of the assignment. At first, it was really daunting to create the game, but I ended up breaking the assignment down in to 3 different phases (1: Get the user input, create an array with those letters, and then create an array with the same amount of underscores as the length of the input 2: Get the program fully functioning, without the MSP image. 3: Add to the MSP Image after every missed letter. The most difficult part for me was testing whether or not the letter was in the list/array. In order to overcome this, it is acutally quite simple, you can just use the "in" or "not in" feature in python. (Something like this....      if ELEMENT in LIST:   or if ELEMENT not in LIST)
  
- 
+
+
+
+### GPIO Pins SSH
+
+#### Description:
+
+In this module, we had to use SSH to be able to remotely activate the led. I decied to do this assignment first as it seemed to be the most straightforward.
+
+#### Code Link:
+
+[SSH Code](https://github.com/glenert41/Engineering_4_Notebook/blob/main/Python/led_blink.py)
+
+#### Images:
+
+<img src="https://github.com/omckenn37/Engineering_4_Notebook/raw/main/Python/media/sshpic.JPG" width="256*1.5">
+                                                                               
+
+
+
+#### Reflection:
+
+This module took 7 hours, although it was very easy. My issue was that when I open Beagle Term and hit enter, I do not get any response. The solution was to switch my TX and RX cables, as the label on them was incorrect.
  
  
  
