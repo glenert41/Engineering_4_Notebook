@@ -182,15 +182,14 @@ In this module, we had to use SSH to be able to remotely activate the led. I dec
 
 #### Images:
 
-<img src="https://github.com/omckenn37/Engineering_4_Notebook/raw/main/Python/media/sshpic.JPG" width="256*1.5">
+<img src="https://github.com/omckenn37/Engineering_4_Notebook/raw/main/Python/media/sshpic.JPG" width="256">
                                                                                
-
-
 
 #### Reflection:
 
-This module took 7 hours, although it was very easy. My issue was that when I open Beagle Term and hit enter, I do not get any response. The solution was to switch my TX and RX cables, as the label on them was incorrect.
- 
+This module was relatively straight forward. The hardest part to understand is that there is a difference between the GPIO pins and the physical pins. In the code, you program it to the physical pins. In the code, it should be more evident about what I am saying, as the comments should clear it up. In classic Graham Lenert fasion, the reason my LED wasn't blinking was because my LED was not in correctly, the legs of the LED were reversed. Here is a link to the GPIO map I referenced, you can also use the TCobbler thing, but I like this more. 
+
+[GPIO PinOut Map Thing](https://i2.wp.com/peppe8o.com/wp-content/uploads/2020/09/Raspberry-PI-Zero-Pinout-schema.jpg?resize=910%2C657&ssl=1)
  
  
  
