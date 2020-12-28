@@ -183,16 +183,48 @@ In this module, we had to use SSH to be able to remotely activate the led. I dec
 #### Images:
 
 <img src="https://github.com/omckenn37/Engineering_4_Notebook/raw/main/Python/media/sshpic.JPG" width="256">
+
+Image Credit: Owen McKenney
                                                                                
 
 #### Reflection:
 
-This module was relatively straight forward. The hardest part to understand is that there is a difference between the GPIO pins and the physical pins. In the code, you program it to the physical pins. In the code, it should be more evident about what I am saying, as the comments should clear it up. In classic Graham Lenert fasion, the reason my LED wasn't blinking was because my LED was not in correctly, the legs of the LED were reversed. Here is a link to the GPIO map I referenced, you can also use the TCobbler thing, but I like this more. 
+This module was relatively straight forward. Setting up the SSH shouldn't cause you many problems at all. The hardest part to understand is that there is a difference between the GPIO pins and the physical pins. In the code, you program it to the physical pins. In the code, it should be more evident about what I am saying, as the comments should clear it up. In classic Graham Lenert fasion, the reason my LED wasn't blinking was because my LED was not in correctly, the legs of the LED were reversed. Here is a link to the GPIO map I referenced, you can also use the TCobbler thing, but I like this more. 
 
 [GPIO PinOut Map Thing](https://i2.wp.com/peppe8o.com/wp-content/uploads/2020/09/Raspberry-PI-Zero-Pinout-schema.jpg?resize=910%2C657&ssl=1)
  
  
  
+ 
+ ### GPIO Pins Python
+ 
+ #### Description
+ 
+ Well, this is the same thing as the GPIO pins SSH, but without the SSH part. So, It was very easy, as I had already done the SSH. Essentially, we wanted to make an LED (or two) blink using Python and GPIO pins. 
+ 
+ 
+ #### Code Link
+ 
+ [SSH Code](https://github.com/glenert41/Engineering_4_Notebook/blob/main/Python/led_blink.py)
+ 
+ 
+Quick little disclaimer: this is the same code and image as the SSH Pins module. This only includes one LED, but all you would have to do is add the port to the LEDS list, and wire another LED up.
+ 
+ 
+ #### Image
+ 
+<img src="https://github.com/omckenn37/Engineering_4_Notebook/raw/main/Python/media/sshpic.JPG" width="256">
+
+Image Credit: Owen McKenney
+
+
+#### Reflection
+
+Once again this was the same module as the SSH regarding the actual code and wiring. Just make sure you're referencing the PinOut (linked below) and you're LED is wired correctly. The set up process is very similar to Arduino and every other language, where you have to assign the pin you want, then set it to an output, then set the output to high.
+
+
+
+[GPIO PinOut Map Thing](https://i2.wp.com/peppe8o.com/wp-content/uploads/2020/09/Raspberry-PI-Zero-Pinout-schema.jpg?resize=910%2C657&ssl=1)
  
  
  
