@@ -1,4 +1,11 @@
 #!/bin/bash
 
+who="World"
 
-echo "Hello, World bash"
+echo "Hello, $who!"
+
+echo "Hello, ${who}!"
+
+echo 'Hello, $swho!'
+
+
