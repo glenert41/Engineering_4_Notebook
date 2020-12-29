@@ -196,6 +196,7 @@ This module was relatively straight forward. Setting up the SSH shouldn't cause 
  
  
  
+ 
  ### GPIO Pins Python
  
  #### Description
@@ -230,6 +231,34 @@ Once again this was the same module as the SSH regarding the actual code and wir
  
  
  
+### GPIO Pins - Bash
 
+#### Description
+
+In this assignment, we had to make an LED blink 10 times using bash. That's about it.
+
+
+#### Code Link
+
+
+[LED Blink Bash Code](https://github.com/glenert41/Engineering_4_Notebook/blob/main/Bash/led_blink_bash)
+
+
+#### Image
+
+<img src="https://github.com/omckenn37/Engineering_4_Notebook/raw/main/Python/media/sshpic.JPG" width="256">
+
+Image Credit: Owen McKenney
+
+
+#### Reflection
+
+This module was a bit tricker than the previous ones, even if the idea behind it was very straightforward. This module took quite a bit of research, and I have linked two different websites that walked me through it below. The hardest part was understanding what lines you needed, and what lines did. Firstly, I used the "touch" command from the first link below in order to create my bash file. Also, I created a new folder for my bash scripts. Next, you had to do some weird stuff. That being, essentially allowing you to run the file by just typing the name of it. The first link below once again explains that well. The second link below is really where the majority of the information for the assignment came from. In order to toggle (turn on or off) the led with bash, you need to have a line that establishes the GPIO, then says physical pin, then says you want to toggle it, then the physical pin you want. That crucial line is shown in the 2nd link below, as well as on my code linked above.
+
+
+
+[General Bash Code Stuff](https://www.taniarascia.com/how-to-create-and-use-bash-scripts/)
+
+[How to make an LED Blink with Bash](https://www.teknotut.com/en/first-raspberry-pi-project-blink-led/#Blink_Project)
 
 
