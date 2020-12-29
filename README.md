@@ -167,11 +167,64 @@ In this assignment, we had to recreate the classic game Hangman; or as we're goi
  
  This assignment was the first assignment this year to really make me think about the process of the assignment. At first, it was really daunting to create the game, but I ended up breaking the assignment down in to 3 different phases (1: Get the user input, create an array with those letters, and then create an array with the same amount of underscores as the length of the input 2: Get the program fully functioning, without the MSP image. 3: Add to the MSP Image after every missed letter. The most difficult part for me was testing whether or not the letter was in the list/array. In order to overcome this, it is acutally quite simple, you can just use the "in" or "not in" feature in python. (Something like this....      if ELEMENT in LIST:   or if ELEMENT not in LIST)
  
+
+
+
+### GPIO Pins SSH
+
+#### Description:
+
+In this module, we had to use SSH to be able to remotely activate the led. I decied to do this assignment first as it seemed to be the most straightforward.
+
+#### Code Link:
+
+[SSH Code](https://github.com/glenert41/Engineering_4_Notebook/blob/main/Python/led_blink.py)
+
+#### Images:
+
+<img src="https://github.com/omckenn37/Engineering_4_Notebook/raw/main/Python/media/sshpic.JPG" width="256">
+
+Image Credit: Owen McKenney
+                                                                               
+
+#### Reflection:
+
+This module was relatively straight forward. Setting up the SSH shouldn't cause you many problems at all. The hardest part to understand is that there is a difference between the GPIO pins and the physical pins. In the code, you program it to the physical pins. In the code, it should be more evident about what I am saying, as the comments should clear it up. In classic Graham Lenert fasion, the reason my LED wasn't blinking was because my LED was not in correctly, the legs of the LED were reversed. Here is a link to the GPIO map I referenced, you can also use the TCobbler thing, but I like this more. 
+
+[GPIO PinOut Map Thing](https://i2.wp.com/peppe8o.com/wp-content/uploads/2020/09/Raspberry-PI-Zero-Pinout-schema.jpg?resize=910%2C657&ssl=1)
  
  
  
  
+ ### GPIO Pins Python
  
+ #### Description
+ 
+ Well, this is the same thing as the GPIO pins SSH, but without the SSH part. So, It was very easy, as I had already done the SSH. Essentially, we wanted to make an LED (or two) blink using Python and GPIO pins. 
+ 
+ 
+ #### Code Link
+ 
+ [SSH Code](https://github.com/glenert41/Engineering_4_Notebook/blob/main/Python/led_blink.py)
+ 
+ 
+Quick little disclaimer: this is the same code and image as the SSH Pins module. This only includes one LED, but all you would have to do is add the port to the LEDS list, and wire another LED up.
+ 
+ 
+ #### Image
+ 
+<img src="https://github.com/omckenn37/Engineering_4_Notebook/raw/main/Python/media/sshpic.JPG" width="256">
+
+Image Credit: Owen McKenney
+
+
+#### Reflection
+
+Once again this was the same module as the SSH regarding the actual code and wiring. Just make sure you're referencing the PinOut (linked below) and you're LED is wired correctly. The set up process is very similar to Arduino and every other language, where you have to assign the pin you want, then set it to an output, then set the output to high.
+
+
+
+[GPIO PinOut Map Thing](https://i2.wp.com/peppe8o.com/wp-content/uploads/2020/09/Raspberry-PI-Zero-Pinout-schema.jpg?resize=910%2C657&ssl=1)
  
  
  
