@@ -1,7 +1,7 @@
 # Engineering 4 Notebook
 My Engineering 4 Notebook - Get well soon Virgil van Dijk
 
-Also my 4th engineering notebook, its fun to count. Please enjoy reading my occasional saracastic and/or informal remarks as I venture in the kinda weird and sometimes annoying but also cool world of modern technology. 
+Also my 4th engineering notebook, its fun to count. Please enjoy reading my occasional saracastic and/or informal remarks as I venture in the kinda weird and sometimes annoying but also cool world of modern technology. I'm also doing this whole thing from home because Coronavirus is happening as I'm sure you've heard, or heard about since you're reading this from the future when you can be near people and stuff. Anyways, enjoy.
 
 Yes also, currently Virgil Van Dijk is hurt because Jordan Pickford decided it was a good idea to tear Mr. Van Dijk's ACL. 
 
