@@ -267,3 +267,22 @@ This module was a bit tricker than the previous ones, even if the idea behind it
 [How to make an LED Blink with Bash](https://www.teknotut.com/en/first-raspberry-pi-project-blink-led/#Blink_Project)
 
 
+### Hello Flask
+
+#### Description
+In this module, we had to set up our raspberry pi to be a web server that you can access by just typing the ip address in to a web browser.
+
+#### Code Link
+
+[Hello Flask Code](https://github.com/glenert41/Engineering_4_Notebook/blob/main/Python/Flask/hello_world/app.py)
+
+This is the same code that is given to you in the assignment module
+
+#### Reflection
+
+This assignment we generally pretty straightforward with little room for error relative to the GPIO modules. One quick side note though, you have to be running the app.py program for the web server to be accessible. When you run the "sudo python app.py", and your pi stops responding and goes blank, that is when you can access the web server, and then you've just got to click ctrl+c to stop the web server. 
+
+
+
+
+
