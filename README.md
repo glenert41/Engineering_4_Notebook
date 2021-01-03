@@ -283,6 +283,25 @@ This is the same code that is given to you in the assignment module
 This assignment we generally pretty straightforward with little room for error relative to the GPIO modules. One quick side note though, you have to be running the app.py program for the web server to be accessible. When you run the "sudo python app.py", and your pi stops responding and goes blank, that is when you can access the web server, and then you've just got to click ctrl+c to stop the web server. 
 
 
+### I2C 
+
+#### Description
+
+In this assignment, we had to use a OLED screen and an accelerometer; we took the acceleration values from the accelerometer, and then showed those values on the screen. Relatively straightforward on paper.
+
+#### Code Link
+
+[I2C Code](https://github.com/glenert41/Engineering_4_Notebook/blob/main/Python/i2c.py)
+
+#### Images
+
+I haven't included images here, as the wiring is generally pretty straightforward and very well detailed in the module, and an image of my cluster of wires would likely be detrimental to your success. My advice here though is make sure to use the Cobbler, it makes wiring the SDA and SCL much easier.
 
 
+#### Reflection
 
+This was definitely this most difficult assignment to date. There were quite a few different things we had to pick up and apply. That being said, I would strongly, I mean like your life depends on it strongly, recommened looking at the code from the two examples that we ran before we were let loose on the assignment. I've linked a github link for them below, so you don't have to look at them on your pi. There is a better explanation of the module in the comments in my code, but you can essentially take most of the stuff you'll need for this assignment from those two examples. The part that really grinded my gears (Do people still say "Grinded my Gears?" Well I just did) anyways, I was having issues with the .read() for my accelerometer. According to the people that helped me, the accelerometer gives you 6 data points, so you need to assign those 6 data points to values, or else you get a silly little error; Essentially, you can't do what I tried, and only assign the acceleration values, you also need to assign the mag values, even if you don't use the mag values. Then everything should be sunny in the world of the I2C assignment. Oh and also, when you use the .format(), you can still edit the values in the parenthesis. I mean that you can do stuff like this .format(round()), and that should help you scale the values down to where you want.
+
+[OLED Screen](https://github.com/adafruit/Adafruit_Python_SSD1306/blob/master/examples/shapes.py)
+
+[Accelerometer](https://github.com/adafruit/Adafruit_Python_LSM303/blob/master/examples/simpletest.py)
