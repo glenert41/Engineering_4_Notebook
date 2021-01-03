@@ -28,22 +28,31 @@ bottom = height - padding
 x = padding
 font = ImageFont.load_default()
 
+#------------------------------ 
+#everything above this line can be taken from the two examples
+#the examples are linked on my Engineering Notebook 
+
 while True:
 	accel, mag = accelerometer.read() # gets accelerometer data
-	accel_x, accel_y, accel_z = accel
-	mag_x, mag_y, mag_z = mag
+	accel_x, accel_y, accel_z = accel #sets the acceleration values
+	mag_x, mag_y, mag_z = mag #although I don't use this, the .read() taken 6 points of data, so you need to give places for all 6 data points
 	
+	#prepares the drawing on the screen
+	#(0,0) is the top left. Increasing each number goes right/down
+	#using .format (from the examples), and divided the value by 100, then rounded to 3 places
 	draw.text((x, top), "Accelerometer Data:", font=font, fill=255) # draws header
 	draw.text((x, top + 10), "Accel x ={0}".format(round(accel_x / 100, 3)), font=font, fill=255) # draws x 
 	draw.text((x, top + 20), "Accel y ={0}".format(round(accel_y / 100, 3)), font=font, fill=255) # draws y
 	draw.text((x, top + 30), "Accel z ={0}".format(round(accel_z / 100, 3)), font=font, fill=255) # draws z
 
+	#actually writes to the display
 	disp.image(image) # displays x, y, z, and header
 	disp.display()
 
-
+	#prepares and writes over the place where the accelerometer values are, essentially clearing the screen there
 	draw.rectangle((100, 12, 55, 50), outline=0, fill=0) # "refreshes" the xyz values so they can be updated
 	disp.image(image)
 	disp.display()
 
+	#added a sleep just for fun and to make sure nothing dies
 	time.sleep(.1)
