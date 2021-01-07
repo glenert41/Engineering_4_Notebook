@@ -2,12 +2,22 @@
 <html>
 <head>
      <title>GPIO with Flask!</title>
+<style>
+
+button{
+	
+}
+
+.btn1 {background-color: #4CAF50;} /* Green */
+.btn2 {background-color: #008CBA;} /* Blue */
+
+</style>
 </head>
 <body>
 {{msg}}
 <form method="POST">
-     <button type="submit" name="button1" value="button1">Click me 1!</button>
-     <button type="submit" name="button2" value="button2">Click me 2!</button>
+     <button type="submit" name="button1" class="button btn1" value="button1">led On</button>
+     <button type="submit" name="button2" class="button btn2" value="button2">led Off</button>
 </form>
 </body>
 </html>
