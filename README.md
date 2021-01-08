@@ -321,7 +321,7 @@ In this assignment, we had to make a user interface to run on a Raspberry Pi web
 
 #### Images
 
-
+<img src="/main/Images/IMG_3755.JPG" width="256">
 
 #### Reflection
 
