@@ -4,6 +4,7 @@ import RPi.GPIO as GPIO
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(17,GPIO.OUT)
+GPIO.setup(12,GPIO.OUT)
 
 app = Flask(__name__)
 
@@ -20,6 +21,16 @@ def index():
                 # pass # do something else
                 print("button2")
 		GPIO.output(17,GPIO.LOW)
+
+            elif  request.form.get('button3') == 'button3':
+                # pass # do something else
+                print("button3")
+		GPIO.output(12,GPIO.HIGH)
+
+            elif  request.form.get('button4') == 'button4':
+                # pass # do something else
+                print("button4")
+		GPIO.output(12,GPIO.LOW)
 
             else:
                 # pass # unknown
