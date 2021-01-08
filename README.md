@@ -305,3 +305,30 @@ This was definitely this most difficult assignment to date. There were quite a f
 [OLED Screen](https://github.com/adafruit/Adafruit_Python_SSD1306/blob/master/examples/shapes.py)
 
 [Accelerometer](https://github.com/adafruit/Adafruit_Python_LSM303/blob/master/examples/simpletest.py)
+
+
+
+### GPIO Flask
+
+#### Description
+
+In this assignment, we had to make a user interface to run on a Raspberry Pi webserver, which would control two LEDS; allowing you to turn them on and off, using 4 buttons.
+
+#### Code Link
+
+[GPIO Flask Folder](https://github.com/glenert41/Engineering_4_Notebook/tree/main/Python/Flask/gpio)
+
+
+#### Images
+
+
+
+#### Reflection
+
+This was one of those assignments that you don't like doing because it is hard to figure out, and then once you figure it out, it becomes pretty fun. The most difficult thing for me was sorting out how to differentiate between the two different buttons. I'm still not entirely sure how I did it, but I essentially gave each button a name, class, and value, that was numbered. The class was for CSS, and the name and value were used to differentiate the buttons in the python file. For the rest of the index.html file, I would want you to know that there are 5 different button editing areas. At the top, there is the button{} area. Here, you'll make changes that will apply to every button on your screen. For the individual buttons areas, which I didn't really need to use, which are .btn{} and so on, you can make changes to that specific button, without altering the other buttons.
+
+
+For the python part of it, that definitely took a little while to figure out. The code should be pretty straightforward, and that was the easiest way I could find to differentiate the buttons. You don't need to prind the button name like I did in each if statement, but I just did that to make it more obvious which button you were pressing. 
+
+
+
