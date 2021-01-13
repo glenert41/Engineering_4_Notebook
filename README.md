@@ -332,3 +332,37 @@ For the python part of it, that definitely took a little while to figure out. Th
 
 
 
+
+
+### Headless
+
+#### Description
+
+In this assignment, we had to take data from an accelerometer, then graph is visually on our OLED Screen. We then had to be able to remotely operate/run the program; either by having the program run on startup, or be able to SSH in to the pi to run the program. 
+
+#### Code Link
+
+[Headless Code](https://github.com/glenert41/Engineering_4_Notebook/blob/main/Python/headless.py)
+
+
+#### Images
+
+Disclaimer: The battery does not supply power for some reason, so I just connected the pi to my computer via the pwr in slot on the pi. So no data is being sent to the pi via wiring, it is all over ssh. I'm just using the wire to the computer to power the pi. 
+
+
+For the display, I let the pi sit, then moved it around my desk, then let it sit again, then moved it around, and then finally let it sit again. This display is the result
+
+
+<img src="Images/IMG_3779.JPG" width="256*2">
+
+
+#### Reflection
+
+This assignment was a little easier than I expected to begin with. The trickiest part was getting to actually graph the point in correlation with the acceleration data. It helps though that the top left of the OLED screen is (0,0) and to go right, you increase x, and to go down, you increase y. So (10,10) would be 10 units right and 10 units down. This is specifically helpful as all you have to do in order to make a basic plotter is to increase the x value by 1 every time, and scale the y value to fit the dimensions of the screen, and then you get a pretty easy graph. There is more detail commented in my code that should help explain how I did it easier. As for the second part, it was easier for me to connect my pi via ssh and log in that way. I didn't have any issues connecting my pi to the interent automatically, so it shouldn't be too difficult to recreate it on your own. 
+  
+  
+
+
+
+
+
