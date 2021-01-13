@@ -45,7 +45,11 @@ while True:
 	#this works best for graphing the Z acceleration
 	#dataValue = abs(accel_z)/50
 
-	dataValue = accel_x/10
+	dataValue = abs(accel_x/10)
+	
+	if dataValue <= 3:
+		dataValue = 3
+
 	print(dataValue)
 
 
