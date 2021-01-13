@@ -41,27 +41,33 @@ while True:
 	accel_x, accel_y, accel_z = accel #sets the acceleration values
 	mag_x, mag_y, mag_z = mag #although I don't use this, the .read() taken 6 points of data, so you need to give places for all 6 data points
 
-	#change this to change the data you want plotted	
-	#this works best for graphing the Z acceleration
+	#change dataValue to change the data you want plotted	
+	#this works best for graphing the Z acceleration (below)
 	#dataValue = abs(accel_z)/50
 
+	# this maps the value of the accel_x to a point on the OLED Screen
 	dataValue = abs(accel_x/10)
-	
+	#if the dataValue would interfere with the heading visually, then put in below the heading
 	if dataValue <= 3:
 		dataValue = 3
-
+	#prints the value so you can see the actual number on the pi
 	print(dataValue)
 
 
 
 	draw.text((x, top), "Accelerometer Data:", font=font, fill=255) # draws header
-	draw.text((x_Value, top + dataValue),"-", font=font, fill=255) 
+	#draws a . where you want it to be
+	# it (.) moves 1 px over every iteration
+	#and moves up/down the screen depending on the accel values
+	draw.text((x_Value, top + dataValue),".", font=font, fill=255) 
 
 
 	#actually writes to the display
 	disp.image(image) # displays x, y, z, and header
 	disp.display()
 
+	#moves the x value of the . one over; iteration complete
 	x_Changer = x_Changer + 1
 
+	#sleep because sleep is good for the body, mind, and heart
 	time.sleep(.1)
