@@ -353,7 +353,7 @@ Disclaimer: The battery does not supply power for some reason, so I just connect
 For the display, I let the pi sit, then moved it around my desk, then let it sit again, then moved it around, and then finally let it sit again. This display is the result
 
 
-<img src="Images/IMG_3779.JPG" width="256*2">
+<img src="Images/IMG_3779.JPG" width="256*1.5">
 
 
 #### Reflection
