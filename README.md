@@ -445,18 +445,19 @@ In this assignment, I had to work with Owen McKenney and Lukas Hange as me and O
 #### Copypasta Project 1
 
 ##### Description
-   In this [assignment](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/Copypasta_Project_1.py) I had to take a picture when the motion sensor detects movement.
+   In this assignment, we had to take a picture whenever the motion sensor detected movement. 
   
-##### Lessons Learned 
-  In this assignment I learned some new things. I learned the commands of a motion sensing and also how to read the date and time. I also learned how to run motion detector commands to read motion and wait for no motion. The command pir.wait_for_motion() is waiting for motion so it's pretty much a time.sleep but until motion is detected, the pir is representitive of the pin of the motion sensor. Also to record a video you have to use camera.record_recording(filename).
   
 ##### Images and links
-  This [Link](https://github.com/lhange42/Engineering_4_Notebook/tree/main/Pictures) is where the video files are and stored as .h264's
+  [Video Files](https://github.com/lhange42/Engineering_4_Notebook/tree/main/Pictures)
+  
+##### Lessons Learned
+
+In this assignment, we learned how to use pir motion sensors, as well as using the camera recording software. For the PIR, you jus thave to do basic setup, which is line 5 in the code, which allows us to reference the pir and declares it as motion sensor. For the PIR in the while loop, a loop that is always running, we have the pir.wait_for_motion() function, which acts as a time.sleep() until motion is detected. It's actually pretty cool. Then, once the motion is detected it runs the camera.start_recording() function, and then once the pir sensor doesn't detect motion (pir.wait_for_no_motion), then we turn the camera off. In order to have multiple files, we had to use the datetime import, and set the filename of the camera recording to the current datetime. The code is pretty self explanitory, as all you do is call "now" when setting the filename and it calls your date and time, but you do have the replace the spaces with underscores.
+
   
   
-  
-  
-  
+ 
   
   
 #### Copypasta Project 2
