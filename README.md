@@ -366,3 +366,86 @@ This assignment was a little easier than I expected to begin with. The trickiest
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Pi Camera
+  
+#### Camera Test 1
+
+##### Description
+   In this [assignment](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test01.py) I had to take a picture using the camera and print an indicator before and a completion indicator after.
+  
+##### Lessons Learned 
+  In this assignment I learned how to do the basic setup for a camera. I learned how to setup the camera's resolution with the camera.resolution() before doing this command and the following you need to make sure that you make picamera.PiCamera() as camera. Finally you can use camera.capture('file name') to take a picture and it will save it in that folder under the name provdied in the apostrophes.
+  
+##### Images and links
+  This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test.jpg) is the picture taken
+  
+#### Camera Test 2
+  
+##### Description
+   In this [assignment](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test02.py) I had to take 5 different pictures with different photo effects.
+  
+##### Lessons Learned 
+  This assignment wasn't too bad. It contains the majority of the same commands and code. In this assignment instead I used a for loop to get the 5 pictures and a series of if and elif commands to cycle through the the different camera affects. The command camera.image_effect = 'effect' is how you change the effect that the camera is using. The effects we used were cartoon, colorswap, none(normal), sketch, washhedout.
+  
+##### Images and links
+   This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test_cartoon.jpg) is the cartoon effect picture
+   
+   This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test_colorswap.jpg) is the colorswap effect picture 
+   
+   This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test_none.jpg) is the normal picture
+   
+   This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test_sketch.jpg) is the sketch effect picture
+   
+   This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test_washedout.jpg) is the washedout effect picture
+  
+### Copypasta Camera
+  
+#### Copypasta Project 1
+
+##### Description
+   In this [assignment](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/Copypasta_Project_1.py) I had to take a picture when the motion sensor detects movement.
+  
+##### Lessons Learned 
+  In this assignment I learned some new things. I learned the commands of a motion sensing and also how to read the date and time. I also learned how to run motion detector commands to read motion and wait for no motion. The command pir.wait_for_motion() is waiting for motion so it's pretty much a time.sleep but until motion is detected, the pir is representitive of the pin of the motion sensor. Also to record a video you have to use camera.record_recording(filename).
+  
+##### Images and links
+  This [Link](https://github.com/lhange42/Engineering_4_Notebook/tree/main/Pictures) is where the video files are and stored as .h264's
+  
+#### Copypasta Project 2
+  
+##### Description
+   In this [assignment](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/Copypasta_Project_2.py) I had to make a stop motion video by turning pictures into an mp4
+  
+##### Lessons Learned 
+  This assignment provided some new insights and commands. This part of the camera.capture line frame%03d.jpg' % frame makes the file change to whatever frame is equal to where that % symbol is. ffmpeg -r 10 -i animation/frame%03d.jpg -qscale 2 animation.mp4 this line of code is something you enter into your terminal that takes all the frames from my animation folder and creates those into a mp4 named animation.
+  
+##### Images and links
+   This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/animation.mp4) is the stop motion video
+   
+   This [Link](https://github.com/lhange42/Engineering_4_Notebook/tree/main/Pictures/animation) is the folder with the frames used to create the stop motion video
+  
+
+
+
+
+
+
