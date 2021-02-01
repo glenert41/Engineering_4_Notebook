@@ -413,10 +413,6 @@ In this assignment, I had to work with Owen McKenney and Lukas Hange as me and O
 
    In this assignment, we had to take 5 different photos, and each photo had to have a different filter on it. 
   
-##### Lessons Learned 
-  
-  This assignment was generally pretty straight forward. You change the image effect by saying camera.image_effect = 'EFFECT_YOU_WANT', which would look something like this camera.image_effect = 'colorswap' if you wanted to use the colorswap filter. The trickiest part was getting the pictures to save as different images, but we decided to just save the photos as different preset names, usch as camera_test_colorswap.jpg or camera_test_washedout.jpg depending on what filter we wanted. We used a for loop to use a different filter on each iteration. Essentially, every filter was in an elif statement, if the iteration of the for loop matched the iteration value of the effect, then it applied the effect and took the photo. 
-  
 ##### Images and links
    This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test_cartoon.jpg) is the cartoon effect picture
    
@@ -429,6 +425,10 @@ In this assignment, I had to work with Owen McKenney and Lukas Hange as me and O
    This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test_washedout.jpg) is the washedout effect picture
    
    [CameraTest2 Code Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test02.py)
+  
+##### Lessons Learned 
+  
+  This assignment was generally pretty straight forward. You change the image effect by saying camera.image_effect = 'EFFECT_YOU_WANT', which would look something like this camera.image_effect = 'colorswap' if you wanted to use the colorswap filter. The trickiest part was getting the pictures to save as different images, but we decided to just save the photos as different preset names, usch as camera_test_colorswap.jpg or camera_test_washedout.jpg depending on what filter we wanted. We used a for loop to use a different filter on each iteration. Essentially, every filter was in an elif statement, if the iteration of the for loop matched the iteration value of the effect, then it applied the effect and took the photo. 
   
   
   
