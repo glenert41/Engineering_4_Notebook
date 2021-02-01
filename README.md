@@ -396,24 +396,26 @@ In this assignment, I had to work with Owen McKenney and Lukas Hange as me and O
 ##### Description
   In this assignment, we had to print a message saying that the program is running, then take a picture, then print a message saying the picture was taken. 
   
-##### Lessons Learned 
-  In this assignment, we learned the basics to taking photos with the raspberry pi camera. First, you need to declare that the camera you want is a pi camera. You use a with statement, which operates similarly to a while loop or if statement, in the sense that you put your code that you want to operate on match indentation. You then need to set the camera resolution, in our case was (1024,768). After that, we decided to take the picture. Before you take the picture, you must have a 2 second sleep in order for the camera to be able to adjust to the light levels. After that pause, we used the camera.capture() function. Which took a photo, and we saved it as "camera_test.jpg". 
-  
 ##### Images and links
+
   [Picture Taken](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test.jpg)
   
-  [CameraTest1 Code Linkl](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test01.py)
+  [CameraTest1 Code Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test01.py)
   
-  
+##### Lessons Learned 
+
+  In this assignment, we learned the basics to taking photos with the raspberry pi camera. First, you need to declare that the camera you want is a pi camera. You use a with statement, which operates similarly to a while loop or if statement, in the sense that you put your code that you want to operate on match indentation. You then need to set the camera resolution, in our case was (1024,768). After that, we decided to take the picture. Before you take the picture, you must have a 2 second sleep in order for the camera to be able to adjust to the light levels. After that pause, we used the camera.capture() function. Which took a photo, and we saved it as "camera_test.jpg". 
   
   
 #### Camera Test 2
   
 ##### Description
-   In this [assignment](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test02.py) I had to take 5 different pictures with different photo effects.
+
+   In this assignment, we had to take 5 different photos, and each photo had to have a different filter on it. 
   
 ##### Lessons Learned 
-  This assignment wasn't too bad. It contains the majority of the same commands and code. In this assignment instead I used a for loop to get the 5 pictures and a series of if and elif commands to cycle through the the different camera affects. The command camera.image_effect = 'effect' is how you change the effect that the camera is using. The effects we used were cartoon, colorswap, none(normal), sketch, washhedout.
+  
+  This assignment was generally pretty straight forward. You change the image effect by saying camera.image_effect = 'EFFECT_YOU_WANT', which would look something like this camera.image_effect = 'colorswap' if you wanted to use the colorswap filter. The trickiest part was getting the pictures to save as different images, but we decided to just save the photos as different preset names, usch as camera_test_colorswap.jpg or camera_test_washedout.jpg depending on what filter we wanted. We used a for loop to use a different filter on each iteration. Essentially, every filter was in an elif statement, if the iteration of the for loop matched the iteration value of the effect, then it applied the effect and took the photo. 
   
 ##### Images and links
    This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test_cartoon.jpg) is the cartoon effect picture
@@ -425,6 +427,11 @@ In this assignment, I had to work with Owen McKenney and Lukas Hange as me and O
    This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test_sketch.jpg) is the sketch effect picture
    
    This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test_washedout.jpg) is the washedout effect picture
+   
+   [CameraTest2 Code Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test02.py)
+  
+  
+  
   
   
 
