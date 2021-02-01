@@ -451,6 +451,8 @@ In this assignment, I had to work with Owen McKenney and Lukas Hange as me and O
 ##### Images and links
   [Video Files](https://github.com/lhange42/Engineering_4_Notebook/tree/main/Pictures)
   
+  [CopyPasta 1 Code Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/Copypasta_Project_1.py)
+  
 ##### Lessons Learned
 
 In this assignment, we learned how to use pir motion sensors, as well as using the camera recording software. For the PIR, you jus thave to do basic setup, which is line 5 in the code, which allows us to reference the pir and declares it as motion sensor. For the PIR in the while loop, a loop that is always running, we have the pir.wait_for_motion() function, which acts as a time.sleep() until motion is detected. It's actually pretty cool. Then, once the motion is detected it runs the camera.start_recording() function, and then once the pir sensor doesn't detect motion (pir.wait_for_no_motion), then we turn the camera off. In order to have multiple files, we had to use the datetime import, and set the filename of the camera recording to the current datetime. The code is pretty self explanitory, as all you do is call "now" when setting the filename and it calls your date and time, but you do have the replace the spaces with underscores.
