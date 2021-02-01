@@ -387,16 +387,25 @@ This assignment was a little easier than I expected to begin with. The trickiest
 
 ### Pi Camera
   
+In this assignment, I had to work with Owen McKenney and Lukas Hange as me and Owen's camera was giving errors, and since the deadline was soon, we opted to work through Lukas' camera, and collaborate on the code aspects of each assignment.   
+  
+  
+  
 #### Camera Test 1
 
 ##### Description
-   In this [assignment](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test01.py) I had to take a picture using the camera and print an indicator before and a completion indicator after.
+  In this assignment, we had to print a message saying that the program is running, then take a picture, then print a message saying the picture was taken. 
   
 ##### Lessons Learned 
-  In this assignment I learned how to do the basic setup for a camera. I learned how to setup the camera's resolution with the camera.resolution() before doing this command and the following you need to make sure that you make picamera.PiCamera() as camera. Finally you can use camera.capture('file name') to take a picture and it will save it in that folder under the name provdied in the apostrophes.
+  In this assignment, we learned the basics to taking photos with the raspberry pi camera. First, you need to declare that the camera you want is a pi camera. You use a with statement, which operates similarly to a while loop or if statement, in the sense that you put your code that you want to operate on match indentation. You then need to set the camera resolution, in our case was (1024,768). After that, we decided to take the picture. Before you take the picture, you must have a 2 second sleep in order for the camera to be able to adjust to the light levels. After that pause, we used the camera.capture() function. Which took a photo, and we saved it as "camera_test.jpg". 
   
 ##### Images and links
-  This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test.jpg) is the picture taken
+  [Picture Taken](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test.jpg)
+  
+  [CameraTest1 Code Linkl](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test01.py)
+  
+  
+  
   
 #### Camera Test 2
   
@@ -417,8 +426,15 @@ This assignment was a little easier than I expected to begin with. The trickiest
    
    This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/camera_test_washedout.jpg) is the washedout effect picture
   
-### Copypasta Camera
   
+
+### Copypasta Camera
+
+In this assignment, I had to work with Owen McKenney and Lukas Hange as me and Owen's camera was giving errors, and since the deadline was soon, we opted to work through Lukas' camera, and collaborate on the code aspects of each assignment. 
+
+
+
+
 #### Copypasta Project 1
 
 ##### Description
@@ -429,6 +445,12 @@ This assignment was a little easier than I expected to begin with. The trickiest
   
 ##### Images and links
   This [Link](https://github.com/lhange42/Engineering_4_Notebook/tree/main/Pictures) is where the video files are and stored as .h264's
+  
+  
+  
+  
+  
+  
   
 #### Copypasta Project 2
   
