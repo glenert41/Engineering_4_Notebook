@@ -465,15 +465,25 @@ In this assignment, we learned how to use pir motion sensors, as well as using t
 #### Copypasta Project 2
   
 ##### Description
-   In this [assignment](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/Copypasta_Project_2.py) I had to make a stop motion video by turning pictures into an mp4
+   In this assignment, we had to make a stop motion video (.mp4 file) out of picture files. We essentially had to combine a set of chronological pictures to make the images appear to have motion in them, 
   
 ##### Lessons Learned 
-  This assignment provided some new insights and commands. This part of the camera.capture line frame%03d.jpg' % frame makes the file change to whatever frame is equal to where that % symbol is. ffmpeg -r 10 -i animation/frame%03d.jpg -qscale 2 animation.mp4 this line of code is something you enter into your terminal that takes all the frames from my animation folder and creates those into a mp4 named animation.
+  This assignment gave us access to some new commands and lines that can be pretty useful.
+  
+   ffmpeg -r 10 -i animation/frame%03d.jpg -qscale 2 animation.mp4 -- put this line in terminal to take frames from the animation folder and make an mp4 named animation
+   
+   frame%03d.jpg' % frame -- added at the end of the camera.capture pass to add the frame to the end of the file name
+   
+  
+  In other lessons, this was more of a think through, and just work through it. We have an if statement in a while loop checking wheter or not you press enter, if you press enter, it takes a photo and adds one to the frame counter. If you press x instead of enter, the camera turns off and you exit the program (we also added a keyboardinterrupt test that if a keyboard interrupt is detected, it does the same job as pressing x. I think the biggest lesson is the try-except feature, which essentially can work as a failsafe (except) if something in your main code (try) goes wrong
+   
   
 ##### Images and links
    This [Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/animation.mp4) is the stop motion video
    
    This [Link](https://github.com/lhange42/Engineering_4_Notebook/tree/main/Pictures/animation) is the folder with the frames used to create the stop motion video
+   
+   [CopyPasta2 Code Link](https://github.com/lhange42/Engineering_4_Notebook/blob/main/Pictures/Copypasta_Project_2.py)
   
 
 
